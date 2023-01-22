@@ -6,8 +6,8 @@
         let c = document.getElementById('c')
         let e = document.getElementById('e')
         let d = document.getElementById('d')
-        let gen = Math.floor(Math.random() * 10) + 1
-        //console.log(gen)
+        let gen = Math.floor(Math.random() * 20) + 1
+        console.log(gen)
         function acak(){
             location.reload()
         }
@@ -16,15 +16,17 @@
             let input = document.getElementById('inputangka').value
             let hasil = document.getElementById('hasil')
             let tebak = document.getElementById('tebak')
+            let reset = document.getElementById('reset')
            if(input == gen){
                angka.innerHTML = gen
                hasil.innerHTML = 'TEBAKAN ANDA BENAR'
                hasil.style.backgroundColor = 'rgb(55, 241, 55)'
                hasil.style.color = 'white'
                 tebak.style.display = 'none'
-
+                reset.style.display = 'block'
             }
             if(input < gen){
+                
                 hasil.innerHTML = 'COBA LEBIH TINGGI'
                 hasil.style.backgroundColor = ' rgb(255, 255, 0)'
                 hasil.style.color = 'grey'
@@ -43,6 +45,7 @@
                 hasil.style.backgroundColor = 'red'
                 hasil.style.color = 'white'
                 tebak.style.display = 'none'
+                reset.style.display = 'block'
                 // nyawa.innerHTML = sisanyawa
                 a.style.display = 'none'
                 b.style.display = 'none'
@@ -69,4 +72,3 @@
                 d.style.display = 'none'
             }
         }
-    
