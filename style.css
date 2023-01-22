@@ -9,6 +9,7 @@ body,html{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 0;
 }
 .wrapper{
     width: 350px;
@@ -18,6 +19,7 @@ body,html{
     /* background-color: cadetblue; */
     position: relative;
     overflow: hidden;
+    margin-top: 0;
 }
 .judul{
     text-align: center;
