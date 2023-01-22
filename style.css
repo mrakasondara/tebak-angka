@@ -157,6 +157,7 @@ input{
 @keyframes terbangganjil{
     0%{
         left: 0;
+        opacity: 0;
     }
     25%{
         transform: scale(0.7);
@@ -174,6 +175,7 @@ input{
 @keyframes terbanggenap{
     0%{
         right: 0;
+        opacity: 0;
     }
     25%{
         transform: scale(0.7);
