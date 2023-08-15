@@ -10,6 +10,7 @@ body,html{
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 .wrapper{
     width: 350px;
